@@ -1,11 +1,11 @@
-import type { ReviewService } from '../app/review-service';
-import { listReviews } from '../app/list-reviews';
-import type { ListReviewsResult } from '../app/list-reviews';
-import { addReview } from '../app/add-review';
-import type { AddReviewCommand, AddReviewResult } from '../app/add-review';
-import { FakeReviewService } from '../infra/fake-review-service';
-import { HttpReviewService } from '../infra/http-review-service';
-import { seedReviews } from '../seed/reviews';
+import type { ReviewService } from '../app/review-service.js';
+import { listReviews } from '../app/list-reviews.js';
+import type { ListReviewsResult } from '../app/list-reviews.js';
+import { addReview } from '../app/add-review.js';
+import type { AddReviewCommand, AddReviewResult } from '../app/add-review.js';
+import { FakeReviewService } from '../infra/fake-review-service.js';
+import { HttpReviewService } from '../infra/http-review-service.js';
+import { seedReviews } from '../seed/reviews.js';
 
 // Lazy singleton for the app's ReviewService implementation.
 let _reviewService: ReviewService | undefined;

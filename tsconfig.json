@@ -1,14 +1,19 @@
 {
   "files": [],
   "references": [
-    
-      "compilerOptions", {
-    "skipLibCheck": true,
+    {
       "path": "./tsconfig.node.json"
     },
     {
       "path": "./tsconfig.app.json"
     }
-  ]
-  
+  ],
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "cis3039-reviews-api/*": ["cis3039-reviews-api/src/*"]
+    }
+  }
 }

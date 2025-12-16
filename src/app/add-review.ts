@@ -1,4 +1,4 @@
-import type { ReviewService, AddReviewInput, Review } from './review-service';
+import type { ReviewService, AddReviewInput, Review } from './review-service.js';
 
 export type AddReviewResult =
   | { success: true; review: Review }
